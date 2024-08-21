@@ -67,10 +67,6 @@ items:
       allow_update: false
       name: bash
       path: /usr/bin/bash
-    - action: deny
-      allow_update: false
-      name: curl
-      path: /usr/bin/curl
     - action: allow
       allow_update: false
       name: nginx
@@ -90,7 +86,7 @@ items:
     process_profile:
       baseline: zero-drift
     target:
-      policymode: Monitor
+      policymode: Protect
       selector:
         comment: ""
         criteria:
