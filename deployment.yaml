@@ -16,7 +16,7 @@ spec:
       volumes:
         - name: nginx-htmls
           configMap:
-            name: nginx-htmls
+            name: cm-nginx-htmls
       containers:
       - name: nginx
         image: nginx:latest
