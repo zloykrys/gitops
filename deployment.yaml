@@ -13,16 +13,9 @@ spec:
       labels:
         app: nginx
     spec:
-      volumes:
-        - name: nginx-htmls
-          configMap:
-            name: cm-nginx-htmls
       containers:
       - name: nginx
         image: nginx:latest
-        volumeMounts:
-          - name: nginx-htmls
-            mountPath: /usr/share/nginx/html
         ports:
         - containerPort: 80
 
