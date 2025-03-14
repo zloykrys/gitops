@@ -7,3 +7,8 @@ configMapGenerator:
   - ./index.html
   - ./50x.html
 
+
+resources:
+  - ./deployment.yaml
+  - ./service.yaml
+  - ./namespace.yaml
