@@ -24,10 +24,10 @@ items:
       path: /pause
     process_profile:
       baseline: zero-drift
-      mode: Protect
+      mode: Discover
     response: null
     target:
-      policymode: Protect
+      policymode: Discover
       selector:
         comment: ""
         criteria:
