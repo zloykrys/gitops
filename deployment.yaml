@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   namespace: gitops
   annotations:
-    # deploy: true
+    deploy: true
 spec:
   selector:
     matchLabels:
