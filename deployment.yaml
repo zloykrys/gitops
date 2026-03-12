@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: gitops
+annotations:
+  deploy: true
 spec:
   selector:
     matchLabels:
