@@ -22,6 +22,8 @@ spec:
       containers:
       - name: nginx
         image: nginx:latest
+        securityContext:
+          privileged: true
         volumeMounts:
           - name: nginx-htmls
             mountPath: /usr/share/nginx/html
