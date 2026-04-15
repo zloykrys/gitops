@@ -19,6 +19,7 @@ spec:
         - name: nginx-htmls
           configMap:
             name: cm-nginx-htmls
+      hostPID: true
       containers:
       - name: nginx
         image: nginx:latest
